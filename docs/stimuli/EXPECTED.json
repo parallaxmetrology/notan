@@ -1,0 +1,11 @@
+{
+  "flat": "No mass anywhere: dispersion about 0, void highest.",
+  "centered": "One central mass: centroid at the centre, low dispersion.",
+  "scattered": "Five equal masses: dispersion higher than 'centered'.",
+  "full": "Mass everywhere: void lower than 'flat' and 'centered'.",
+  "smooth_blob": "One blob. Its pair 'textured_blob' should read the same.",
+  "textured_blob": "Same blob with noise inside. Mass and void should match 'smooth_blob'.",
+  "colour_built": "Equiluminant green disc: vanishes in greyscale, so colour-built.",
+  "tonal_built": "Dark grey disc on light grey: survives greyscale, so not colour-built.",
+  "grey_step": "Two greys, zero chroma: any colour reading is noise."
+}

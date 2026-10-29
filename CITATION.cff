@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use parallax-notan in research, please cite it as below."
+title: "parallax-notan: texture-robust Notan mass and a tonal-versus-chromatic construction signature"
+type: software
+authors:
+  - family-names: Parrish
+    given-names: Russell
+    orcid: https://orcid.org/0009-0008-9781-7995
+version: "0.1.0"
+date-released: 2026-10-29
+license: MIT
+url: https://www.parallaxmetrology.com
+repository-code: https://github.com/parallaxmetrology/notan
+keywords: [notan, composition, painting, value structure, colour, deterministic, image analysis]
+abstract: >
+  A deterministic reading of an image's large light and dark masses, robust to texture,
+  with a construction signature that measures how much of the mass survives greyscale,
+  tone-curve and contrast changes, and a per-pixel map of where structure depends on colour.
+  Ships nine synthetic images with known answers for testing mass and composition measures.

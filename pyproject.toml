@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parallax-notan"
+version = "0.1.0"
+description = "Texture-robust Notan mass and a tonal-vs-chromatic construction signature for images. Deterministic, no learned model."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Russell Parrish" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "scipy>=1.8", "scikit-image>=0.19", "Pillow>=9"]
+keywords = ["notan", "composition", "painting", "image analysis", "value structure"]
+
+[project.urls]
+Homepage = "https://www.parallaxmetrology.com"
+Source = "https://github.com/parallaxmetrology/notan"
+Essay = "https://www.parallaxmetrology.com/how_measures_lie.html"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+dev = ["pytest>=7", "ruff>=0.5"]
+
+[tool.ruff]
+line-length = 130
+extend-exclude = ["tests/data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[project.scripts]
+parallax-notan = "parallax_notan.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

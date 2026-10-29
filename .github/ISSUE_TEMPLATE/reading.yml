@@ -1,0 +1,25 @@
+name: A reading that looks wrong
+description: The mass map, value map or construction reading disagrees with what you see
+labels: [reading]
+body:
+  - type: input
+    id: work
+    attributes:
+      label: The picture
+      description: Title and artist, or a link to a public-domain or openly licensed image.
+    validations:
+      required: true
+  - type: textarea
+    id: see
+    attributes:
+      label: What you see
+      description: Where the masses are, or what is built from colour, in your eye.
+    validations:
+      required: true
+  - type: textarea
+    id: tool
+    attributes:
+      label: What the tool says
+      description: The command you ran and the relevant output or map.
+    validations:
+      required: true
